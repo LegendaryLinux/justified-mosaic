@@ -1,0 +1,35 @@
+@keyframes fade{
+  from{
+    opacity: 1;
+  }
+
+  to{
+    opacity: 0.6;
+  }
+}
+
+.justified-mosaic{
+  width: 100%;
+
+  .justified-mosaic-image-wrapper{
+    display: block;
+    background-color: #000000;
+
+    :before{
+      content: attr(data-title);
+      color: white;
+      visibility: visible;
+    }
+
+    :hover{
+      -webkit-animation: fade 0.25s;
+      -o-animation: fade 0.25s;
+      animation: fade 0.25s;
+      opacity: 0.6;
+    }
+
+
+  }
+
+
+}
