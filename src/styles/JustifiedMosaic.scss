@@ -1,14 +1,14 @@
-@keyframes fade{
-  from{
-    opacity: 1;
-  }
-
-  to{
-    opacity: 0.3;
-  }
-}
-
 .justified-mosaic{
+  @keyframes img-fade{
+    from{ opacity: 1; }
+    to{ opacity: 0.3; }
+  }
+
+  @keyframes text-fade{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+  }
+
   width: 100%;
 
   .justified-mosaic-image-wrapper{
@@ -20,7 +20,7 @@
       position: absolute;
       top: calc(50% - 2em);
       left: 0.5em;
-      color: white;
+      color: #ffffff;
 
       .title{
         font-size: 2em;
@@ -34,18 +34,18 @@
 
   .justified-mosaic-image-wrapper:hover{
     .justified-mosaic-image{
-      animation: fade 0.25s;
-      -webkit-animation: fade 0.25s;
-      -o-animation: fade 0.25s;
+      animation: img-fade 0.25s;
+      -webkit-animation: img-fade 0.25s;
+      -o-animation: img-fade 0.25s;
       opacity: 0.3;
     }
 
     .image-info{
       visibility: visible;
-      animation: fade 0.25s;
-      -webkit-animation: fade 0.25s;
-      -o-animation: fade 0.25s;
-      opacity: 0.3;
+      animation: text-fade 0.25s;
+      -webkit-animation: text-fade 0.25s;
+      -o-animation: text-fade 0.25s;
+      opacity: 1;
     }
   }
 }
