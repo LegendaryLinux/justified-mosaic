@@ -75,17 +75,21 @@ class JustifiedMosaic extends Component{
                         style={divStyle}
                         key={Math.floor(Math.random()*9999999)}
                         className="justified-mosaic-image-wrapper"
-                        data-title={this.state.imageObjects[i].title}
-                        data-description={this.state.imageObjects[i].description}
                     >
                         <a href={this.state.imageObjects[i].url ? this.state.imageObjects[i].url : null}>
                             <img
+                                className="justified-mosaic-image"
                                 src={this.state.imageObjects[i].src}
                                 alt={this.state.imageObjects[i].title}
                                 width={this.state.imageLayout.boxes[i].width}
                                 height={this.state.imageLayout.boxes[i].height}
                             />
                         </a>
+                        <span className="image-info">
+                            <span className="title">{this.state.imageObjects[i].title}</span>
+                            <br />
+                            <span className="description">{this.state.imageObjects[i].description}</span>
+                        </span>
                     </div>
                 )],
             }), () => { // Callback for setState

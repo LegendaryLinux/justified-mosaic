@@ -4,7 +4,7 @@
   }
 
   to{
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 
@@ -12,24 +12,40 @@
   width: 100%;
 
   .justified-mosaic-image-wrapper{
-    display: block;
     background-color: #000000;
+    display: block;
 
-    ::before{
-      content: attr(data-title);
-      visibility: visible;
-      color: green;
+    .image-info{
+      visibility: hidden;
+      position: absolute;
+      top: calc(50% - 2em);
+      left: 0.5em;
+      color: white;
+
+      .title{
+        font-size: 2em;
+      }
+
+      .description{
+        font-size: 1em;
+      }
     }
-
-    :hover{
-      -webkit-animation: fade 0.25s;
-      -o-animation: fade 0.25s;
-      animation: fade 0.25s;
-      opacity: 0.6;
-    }
-
-
   }
 
+  .justified-mosaic-image-wrapper:hover{
+    .justified-mosaic-image{
+      animation: fade 0.25s;
+      -webkit-animation: fade 0.25s;
+      -o-animation: fade 0.25s;
+      opacity: 0.3;
+    }
 
+    .image-info{
+      visibility: visible;
+      animation: fade 0.25s;
+      -webkit-animation: fade 0.25s;
+      -o-animation: fade 0.25s;
+      opacity: 0.3;
+    }
+  }
 }
