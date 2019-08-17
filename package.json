@@ -10,6 +10,9 @@
   "author": "Chris Wilson",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "justified-layout": "^3.0.0",
     "lodash-es": "^4.17.15",
     "prop-types": "latest",

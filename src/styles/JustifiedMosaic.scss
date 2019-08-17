@@ -15,10 +15,10 @@
     display: block;
     background-color: #000000;
 
-    :before{
+    ::before{
       content: attr(data-title);
-      color: white;
       visibility: visible;
+      color: green;
     }
 
     :hover{

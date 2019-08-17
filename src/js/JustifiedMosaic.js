@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import forEach from 'lodash-es/forEach';
+import LoadingScreen from './LoadingScreen';
 import '../styles/JustifiedMosaic.scss';
 
 class JustifiedMosaic extends Component{
@@ -99,7 +100,7 @@ class JustifiedMosaic extends Component{
         if(this.state.showLoading){
             return (
                 <div id={this.htmlId} className="justified-mosaic">
-                    Loading!
+                    <LoadingScreen />
                 </div>
             );
         }
