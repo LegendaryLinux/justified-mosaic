@@ -1,13 +1,13 @@
 {
-  "name": "mosaic-test",
+  "name": "justified-mosaic",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react component which automatically resizes images to conform to a justified layout using Flickr's open-source algorithm",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",
     "dev": "webpack --watch --mode development --config webpack.config.dev.js"
   },
-  "author": "Chris Wilson",
+  "author": "LegendaryLinux",
   "license": "MIT",
   "repository": {
     "type": "git",
