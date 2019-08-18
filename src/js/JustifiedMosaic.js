@@ -74,7 +74,7 @@ class JustifiedMosaic extends Component{
                     <div
                         style={divStyle}
                         key={Math.floor(Math.random()*9999999)}
-                        className="justified-mosaic-image-wrapper"
+                        className={`justified-mosaic-image-wrapper ${this.props.darkenOnHover ? 'darken' : ''}`}
                     >
                         <a href={this.state.imageObjects[i].url ? this.state.imageObjects[i].url : null}>
                             <img
@@ -129,6 +129,7 @@ JustifiedMosaic.propTypes = {
     boxSpacing: PropTypes.number,
     targetRowHeight: PropTypes.number,
     rowLimit: PropTypes.number,
+    darkenOnHover: PropTypes.bool,
 };
 
 JustifiedMosaic.defaultProps = {
@@ -137,6 +138,7 @@ JustifiedMosaic.defaultProps = {
     boxSpacing: 5,
     targetRowHeight: 300,
     rowLimit: Infinity,
+    darkenOnHover: false,
 };
 
 export default JustifiedMosaic;

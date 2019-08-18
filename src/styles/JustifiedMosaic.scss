@@ -32,7 +32,7 @@
     }
   }
 
-  .justified-mosaic-image-wrapper:hover{
+  .justified-mosaic-image-wrapper.darken:hover{
     .justified-mosaic-image{
       animation: img-fade 0.25s;
       -webkit-animation: img-fade 0.25s;

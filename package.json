@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --watch --mode development"
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack --watch --mode development --config webpack.config.dev.js"
   },
   "author": "Chris Wilson",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LegendaryLinux/justified-mosaic.git"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",

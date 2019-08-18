@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        index: './src/js/JustifiedMosaic.js'
+        index: './src/js/index.js'
     },
     module: {
         rules: [
@@ -32,8 +32,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname),
+        path: path.resolve(__dirname)+'/public/js',
         filename: "[name].js",
-        libraryTarget: 'commonjs2',
     }
 };

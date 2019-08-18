@@ -60,12 +60,6 @@ const images = [
         url: '',
     },
     {
-        src: 'https://54disneyreviews.files.wordpress.com/2014/09/dinosaur-poster.jpg',
-        title: 'Nobody watched this movie',
-        description: 'Was it any good?',
-        url: '',
-    },
-    {
         src: 'https://2.bp.blogspot.com/-cYevgpCqDJU/UZJgkT125XI/AAAAAAAAAVo/rpSRr2Uzzco/s1600/Planet+Dinosaur1.jpg',
         title: 'Are these birds?',
         description: 'They kind of look like birds',
